@@ -1,0 +1,29 @@
+html
+{
+width: 700px;
+margin: 0 auto;
+font-size: 30px;
+background-color: red;
+}
+th{
+color: brown;
+}
+p {
+font-size: 20px;
+margin: 0 auto;
+padding: 0;
+}
+.my_form
+{
+width: 100%;
+text-align: center;
+border: 2px solid black;
+}
+#bases
+{
+background-color: green;
+width: 300px;
+height: 70px;
+font-size: 50px;
+border: 2px solid pink;
+}

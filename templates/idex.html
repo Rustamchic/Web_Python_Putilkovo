@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JK Putilkovo!</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('styles', filename='style.css')}}">
+</head>
+<body>
+    <h1 class="my-title">
+        This database has been created for users to control the quantity of owner's flats<br>
+        Let's try our database and enjoy this program!
+    </h1>
+    <table>
+    <td>
+            <p>
+            This database stores information about user's flats.<br>
+            Each apartment has it's own area and quality of rooms.
+            </p>
+    </td>
+        <td>
+            <img style="width:100px" src="/styles/Putilkovo_index.jpg" alt="JK">
+
+        </td>
+    </table>
+     <form method="get" action="/users">
+        <button id="open-base">
+            Open the realistic database
+        </button>
+    </form>
+</body>
+</html>

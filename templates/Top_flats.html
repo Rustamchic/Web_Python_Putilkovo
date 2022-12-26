@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('styles', filename='style.css')}}">
+</head>
+<body>
+    <h1 class="my-title">
+        Database of our top flats
+    </h1>
+    <h3 class="my-title">
+       There are users of flats with an ID: {{ data[0]['id_user'] }}
+    </h3>
+    <table>
+    <td width="60%">
+        <h2 style="margin: 10px 0 5px; padding: 0 60px">User Information</h2>
+        <p style="font-size: 25px; padding: 0 60px">
+            Name: {{ data[0]['name'] }} <br>
+            Surname: {{ data[0]['surname'] }} <br>
+            Quality: {{ data[0]['phone_number'] }} <br>
+        </p>
+    </td>
+    <td>
+        <img style="width: 350px;" src="/styles/Flat1.jpg" alt="the planning flats">
+    </td>
+    </table>
+
+    <h3 class="my_form">
+        Flats
+    </h3>
+
+    <table class="my-table">
+  <tr>
+      <th> Number of flat </th>
+      <th> quality of rooms </th>
+      <th> area </th>
+  </tr>
+  <tr id="tr-owners">
+
+      <td>
+          {{ cars['id_car'] }}
+      </td>
+      <td>
+          {{ cars['brand'] }}
+      </td>
+      <td>
+          {{ cars['color'] }}
+      </td>
+      <td>
+          {{ cars['body_type'] }}
+      </td>
+      <td>
+          <form action="/owners/{{ id }}/cars/{{cars['id_car']}}" method="get">
+              <button id="bt-view">Select</button>
+          </form>
+      </td>
+
+  </tr>
+    </table>
+     <table>
+    <td width="60%">
+        <p style="font-size: 25px; padding: 0 60px">
+            <p>The user (with id <b>{{ id }}</b>) has no current flats</p>
+        </p>
+    </td>
+    <td>
+        <img style="width: 350px;" src="/styles/Problem_Putilkovo.jpg" ALT="There is no static flats right now">
+    </td>
+    </table>
+    <br>
+</body>
+</html>

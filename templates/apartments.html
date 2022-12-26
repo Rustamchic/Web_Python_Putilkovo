@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>An enormous flat of our citizens!</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('styles', filename='style.css')}}">
+</head>
+<body>
+    <h1 class="my-title">
+        Database of luxury apartments
+    </h1>
+    <table>
+        <td>
+            <img style="width:300px" src="/styles/Flat1.jpg" alt="flat">
+        </td>
+        <td>
+            <p style="font-size: 25px; padding: 0 60px">
+                User id (user): {{ id }}<br>
+                Information about the flat with the ID {{ data['id_flat']}}
+            </p>
+        </td>
+    </table>
+    <table class="my_form">
+        <tr>
+            <th> quality </th>
+            <th> area </th>
+        </tr>
+        <tr id="tr-owners">
+            <td>
+                {{ data['qulity'] }}
+            </td>
+            <td>
+                {{ data['area'] }}
+            </td>
+        </tr>
+
+</body>
+</html>
